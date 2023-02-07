@@ -15,7 +15,7 @@ baseURI = "https://reqres.in";
                 then().body("data.id[1]", equalTo(8)).
                 body("data.last_name",hasItems("Lawson","Ferguson", "Funke")).
                 statusCode(200).log().all();
-
+        System.out.println("status code 200");
     }
 
 }
